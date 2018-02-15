@@ -1,0 +1,47 @@
+$border: #E5E5E5;
+$text-color: #222;
+$text-size: 14px;
+$icon-text-color: #CCCDDD;
+$icon-text-size: 11px;
+
+* { 
+  box-sizing: border-box;
+  }
+body {
+  background-color: #F4F4F4;
+}
+button {
+  border: 0;
+  background-color: transparent;
+  font-weight: bold;
+  color: $text-color;
+}
+.menu {
+  border-bottom: 1px solid $border;
+  background-color: white;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  &__boton {
+    height: 50px;
+    font-size: $text-size;
+    border-bottom: 1px solid $border;
+    margin: 10px;
+  }
+  &__icon {
+    color: $icon-text-color;
+    font-size: $icon-text-size;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    flex-direction: row;
+    justify-content: center;
+    &__boton {
+    border-bottom: 0;
+    padding: 12px 0;
+    }
+  }
+}

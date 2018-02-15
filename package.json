@@ -1,0 +1,16 @@
+{
+  "name": "activity--dribbble-navbar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "node-sass styles.scss ./css/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
